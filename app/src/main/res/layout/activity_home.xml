@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inner_bg"
+    android:orientation="vertical"
+    tools:context="com.technosysint.pricechecker.HomeActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="800dp"
+            android:contentDescription="@string/price_checker_logo"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@drawable/price_check_home"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_feedback_open"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/ripple_effect"
+            android:padding="20dp"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nexa_light"
+            android:onClick="openMainActivity"
+            android:text="@string/open_home_btn" />
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/business_exper"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/b_exper_logo"/>
+
+    <include layout="@layout/footer"/>
+
+
+
+</RelativeLayout>

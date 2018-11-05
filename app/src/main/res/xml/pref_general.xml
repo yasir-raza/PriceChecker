@@ -1,0 +1,24 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:title="@string/pref_technosys_webapi_title"
+        android:inputType="textUri"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:key="@string/pref_technosys_webapi_key"
+        android:defaultValue="@string/pref_technosys_webapi_default_link">
+    </EditTextPreference>
+
+    <EditTextPreference
+        android:title="@string/pref_technosys_Database_title"
+        android:inputType="text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:key="@string/pref_technosys_Database_key"
+        android:defaultValue="@string/pref_technosys_Database_default">
+    </EditTextPreference>
+
+
+
+</PreferenceScreen>

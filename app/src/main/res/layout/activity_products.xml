@@ -1,0 +1,323 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inner_bg"
+    android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:baselineAligned="false"
+            android:layout_marginBottom="120dp"
+            android:padding="10dp"
+            android:layout_marginEnd="80dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:background="@drawable/box_shape"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:contentDescription="@string/product_image_name"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/product_image"
+                            android:scaleType="fitCenter"
+                            android:background="@drawable/basket_icon"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_above="@id/product_image"
+                            android:id="@+id/barcode_tv"
+                            android:rotation="-90"
+                            android:gravity="center"
+                            android:textSize="60sp"
+                            android:fontFamily="@font/barcode_font"/>
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorGray"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/productName"
+                        android:id="@+id/product_name"
+                        android:textSize="28sp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nexa_bold"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_weight"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/nexa_light"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginEnd="20dp"
+                        android:paddingBottom="30dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.12"
+                android:orientation="vertical"
+                android:id="@+id/price_box_layout"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/nexa_bold"
+                    android:background="@drawable/blue_band"
+                    android:padding="5dp"
+                    android:text="@string/price"
+                    android:textScaleX="1.2"
+                    android:textSize="22sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:padding="5dp"
+                    android:background="@drawable/white_box_small"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:id="@+id/market_price_layout"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/colorBlack"
+                            android:text="@string/market_price"
+                            android:fontFamily="@font/nexa_light"
+                            android:textAlignment="center"
+                            android:textSize="24sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:id="@+id/market_price"
+                            android:textAllCaps="true"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:background="@drawable/red_line"
+                            android:fontFamily="@font/nexa_bold"
+                            android:textSize="30sp"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/our_price_layout"
+                        android:layout_marginStart="50dp"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/productName"
+                            android:fontFamily="@font/nexa_light"
+                            android:layout_marginEnd="20dp"
+                            android:text="@string/our_price"
+                            android:textSize="24sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_our_price"
+                            android:fontFamily="@font/nexa_bold"
+                            android:textColor="@color/productName"
+                            android:textAllCaps="true"
+                            android:textSize="32sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nexa_bold"
+                            android:id="@+id/save_price"
+                            android:textColor="@color/productSave"
+                            android:textSize="26sp"
+                            android:paddingBottom="10dp"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/discount_box_layout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/blue_band"
+                        android:padding="5dp"
+                        android:fontFamily="@font/nexa_bold"
+                        android:text="@string/offers"
+                        android:textScaleX="1.2"
+                        android:textSize="22sp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_box_big"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_discount_offer1"
+                            android:textColor="@color/colorRed"
+                            android:textSize="30sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nexa_light"
+                            android:textSize="22sp"
+                            android:id="@+id/iv_offer1_market_price"
+                            android:textColor="@color/colorBlack"
+                            android:layout_below="@id/tv_discount_offer1"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nexa_light"
+                            android:textSize="22sp"
+                            android:layout_toEndOf="@id/iv_offer1_market_price"
+                            android:id="@+id/iv_offer1_our_price"
+                            android:textColor="@color/colorBlack"
+                            android:layout_below="@id/tv_discount_offer1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:id="@+id/horizontal_line"
+                            android:background="@color/colorGray"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@id/iv_offer1_our_price"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_discount_offer2"
+                            android:layout_below="@id/horizontal_line"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/colorRed"
+                            android:textSize="30sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nexa_light"
+                            android:textSize="22sp"
+                            android:id="@+id/iv_offer2_market_price"
+                            android:textColor="@color/colorBlack"
+                            android:layout_below="@id/tv_discount_offer2"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nexa_light"
+                            android:textSize="22sp"
+                            android:layout_toEndOf="@id/iv_offer2_market_price"
+                            android:id="@+id/iv_offer2_our_price"
+                            android:textColor="@color/colorBlack"
+                            android:layout_below="@id/tv_discount_offer2" />
+
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/arrowBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/arrow_btn" />
+
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="40dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginBottom="10dp"
+    android:contentDescription="@string/price_checker_logo"
+    android:background="@drawable/price_checker_logo"
+    android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/business_exper"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/b_exper_logo"/>
+</RelativeLayout>

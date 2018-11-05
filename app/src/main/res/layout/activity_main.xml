@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parentPanel"
+    android:background="@drawable/price_checker_screen1"
+    tools:context="com.technosysint.pricechecker.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/footer"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="800dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/price_checker_logo"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/price_check_home"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scan_here"
+            android:id="@+id/checker"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="70sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nexa_bold"/>
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/arrowBtn"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/arrow_btn" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/barcode_text"
+            android:visibility="gone"
+            android:labelFor="@id/barcode_text"
+            android:layout_gravity="center_horizontal"
+            android:inputType="text"
+            android:maxLength="12"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/business_exper"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/b_exper_logo"/>
+
+
+
+        <include layout="@layout/footer"  android:id="@+id/footer"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/custom_actionbar_reset"
+        android:title="@string/home_icon"
+        app:showAsAction="always"
+        android:visible="false"
+        android:icon="@drawable/ic_ic_action_reset"/>
+
+    <item
+        android:id="@+id/custom_actionbar_home"
+        android:title="@string/home_icon"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_ic_action_home"/>
+
+    <item
+        android:id="@+id/custom_actionbar_signout"
+        android:title="@string/signout"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_ic_action_signout"/>
+
+    <item
+        android:id="@+id/custom_actionbar_setting"
+        android:title="@string/title_activity_settings"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_ic_action_overflow"/>
+
+</menu>

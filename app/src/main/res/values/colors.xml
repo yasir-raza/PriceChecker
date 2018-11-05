@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0085e2</color>
+    <color name="colorPrimaryDark">#063c57</color>
+    <color name="colorAccent">#414042</color>
+    <color name="colorWhite">#FFF</color>
+    <color name="colorGray">#CCCCCC</color>
+    <color name="colorGreen">#3D6B2C</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorDarkGray">#333030</color>
+    <color name="colorDarkGrayHover">#494646</color>
+    <color name="colorGolden">#ffc600</color>
+    <color name="transparent">#00000000</color>
+    <color name="productName">#092459</color>
+    <color name="productSave">#1b7a04</color>
+
+</resources>
